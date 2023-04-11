@@ -1,3 +1,4 @@
+/* XL devices (default) */
 * {
   margin: 0;
   padding: 0;
@@ -58,4 +59,19 @@ canvas {
 .home-links:hover {
   text-decoration: none;
   color: #e16bcf;
+}
+
+/* Large devices */
+@media only screen and (max-width: 1199.98px) {
+  /* ...code... */
+}
+
+/* Medium devices */
+@media only screen and (max-width: 991.98px) {
+  /* ...code... */
+}
+
+/* Small devices */
+@media only screen and (max-width: 767.98px) {
+  /* ...code... */
 }
