@@ -2,9 +2,9 @@
       <canvas id="canvas1"></canvas>
       <h1 class="name-title">Jacob Rees</h1>
       <div class="home-section">
-        <a class="home-links" href="/about">about</a>
-        <a class="home-links" href="/projects">projects</a>
-        <a class="home-links" href="#contact">contact</a>
+        <%= link_to "about", about_path, class:"home-links"%>
+        <%= link_to "projects", projects_path, class:"home-links"%>
+        <%= link_to "contact", contact_path, class:"home-links" %>
       </div>
     </div>
     <%= javascript_include_tag("custom-home/home.js")%>
