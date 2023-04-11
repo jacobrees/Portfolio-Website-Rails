@@ -1,14 +1,4 @@
-<div class="navbar">
-    <div class="nav-container">
-    <a class="nav-links" href="/">Jacob Rees</a>
-        <ul class="nav">
-            <li><%= link_to "about", about_path, class:"nav-links" %></li>
-            <li><%= link_to "projects", about_path, class:"nav-links" %></li>
-            <li><%= link_to "contact", about_path, class:"nav-links" %></li>
-        </ul>
-    </div>
-        
-</div>
+<%= render 'navbar'%>
 
 <div class="about-container">
     <%= image_tag("60970452.jpg", class:"profile-img") %>
@@ -17,4 +7,5 @@
     <p class="about-me-text">My passion lies in frontend web development, where I enjoy designing and building beautiful and intuitive user interfaces. I find it exciting to explore the latest trends and technologies in this field, always seeking to incorporate the most innovative ideas into my projects.</p>
     <p class="about-me-text">When I'm not coding, I love to indulge in my passion for music. Whether it's playing an instrument or listening to my favorite artists, music has always been a source of inspiration and creativity for me.</p>
     <p class="about-me-text">Thank you for taking the time to visit my website. If you have any questions or would like to discuss a potential project, please don't hesitate to get in touch. I look forward to hearing from you!</p>
+    <button class="resume-btn">Resume</button>
 </div>
