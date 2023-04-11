@@ -13,16 +13,17 @@ body {
 
 /* XL devices (default) */
 .navbar {
-  height: 80px;
   display: flex;
   flex-direction: column;
   align-items: end;
   justify-content: center;
-  padding-bottom: 40px;
   position: fixed;
   bottom: 0;
   right: 0;
   z-index: 100;
+  background-color: #292929;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .nav-links {
@@ -138,10 +139,19 @@ canvas {
 
 /* Medium devices */
 @media only screen and (max-width: 991.98px) {
-  /* ...code... */
+  .navbar {
+    flex-direction: row;
+    width: 100%;
+    position: fixed;
+    padding-top: 5px;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #292929;
+  }
 }
 
 /* Small devices */
 @media only screen and (max-width: 767.98px) {
-  /* ...code... */
+ 
 }
