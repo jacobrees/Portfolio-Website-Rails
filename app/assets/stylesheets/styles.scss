@@ -39,22 +39,36 @@ body {
   display: flex;
 }
 
-.nav-links {
+.name-link {
   color: #ffffff;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 30px;
   padding-right: 20px;
   text-decoration: none;
   transition: color 0.2s ease-out;
 }
 
+.name-link:hover {
+  text-decoration: none;
+  color: #4dd0e1;
+}
+
 .nav-links {
+  color: #ffffff;
+  font-weight: bold;
   font-size: 30px;
+  padding-right: 20px;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
 }
 
 .nav-links:hover {
   text-decoration: none;
   color: #4dd0e1;
+}
+
+.hamburger {
+  display: none;
 }
 
 .canvas-wrapper {
@@ -261,6 +275,16 @@ canvas {
 
 /* Small devices */
 @media only screen and (max-width: 767.98px) {
+  .hamburger {
+    display: block;
+    fill: white;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
   .project-content-container {
     display: flex;
     flex-direction: column;
