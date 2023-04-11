@@ -146,6 +146,110 @@ canvas {
   background-color: #4dd0e1;
 }
 
+.showcase-section {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.showcase-title {
+  font-size: 40px;
+  padding-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.project-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-container:last-of-type {
+  padding-bottom: 10px;
+}
+
+.project-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.project-content-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  width: 100%;
+}
+
+.project-content-container-invert {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 2%;
+  border: #919191 solid 1px;
+}
+
+.project-description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 15px;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.project-technology {
+  color: white;
+  background-color: #575757;
+  border: #1f1f1f 1px solid;
+  margin: 3px;
+}
+
+.project-description {
+  font-size: 20px;
+  color: #575757;
+  line-height: 28px;
+}
+
+.project-links {
+  margin-top: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.website-link {
+  color: white;
+  background-color: #202020;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 15%;
+}
+
+.github-link {
+  color: white;
+  background-color: #202020;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 15%;
+}
+
 /* Large devices */
 @media only screen and (max-width: 1199.98px) {
   /* ...code... */
@@ -157,4 +261,17 @@ canvas {
 
 /* Small devices */
 @media only screen and (max-width: 767.98px) {
+  .project-content-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .project-content-container-invert {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+  }
 }
