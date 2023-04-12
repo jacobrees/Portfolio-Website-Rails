@@ -1,2 +1,10 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+    <div class="canvas-wrapper">
+      <canvas id="canvas1"></canvas>
+      <h1 class="name-title">Jacob Rees</h1>
+      <div class="home-section">
+        <%= link_to "about", about_path, class:"home-links"%>
+        <%= link_to "projects", projects_path, class:"home-links"%>
+        <%= link_to "contact", contact_path, class:"home-links" %>
+      </div>
+    </div>
+    <%= javascript_include_tag("custom-home/home.js")%>

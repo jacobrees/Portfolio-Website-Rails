@@ -1,0 +1,26 @@
+<%= render :partial => 'partials/navbar' %>
+<%= form_with url: contact_path, method: :post do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div>
+    <%= form.label :email %>
+    <%= form.email_field :email %>
+  </div>
+  <div>
+    <%= form.label :message %>
+    <%= form.text_area :message %>
+  </div>
+  <%= form.submit 'Send' %>
+<% end %>
+<% if flash[:error].present? %>
+  <div class="alert alert-danger">
+    <%= flash[:error] %>
+  </div>
+  <%end%>
+<% if flash[:success].present? %>
+  <div class="alert alert-success">
+    <%= flash[:success] %>
+  </div>
+<% end %>
